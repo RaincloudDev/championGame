@@ -1,0 +1,184 @@
+html{
+    height: 100%;
+    width: 100%;
+    background-image: url(../../images/background.png);
+    
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+div, img{
+    display: flex;
+    
+    
+}
+
+body{
+    border: 1px red;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    max-width: 50px;
+    border-radius: 50%;
+    padding: 6px;
+    box-shadow: 4px 3px 8px 1px #969696;
+
+}
+/*top section-health bars and avatars
+---maybe add score here */
+#healthBars{
+    
+    display: flex;
+    flex-flow: row;
+    align-self: stretch;
+    justify-content: space-between;
+}
+#playerInfo, #evylenInfo{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../../images/2AT2d4xjwdnZlr1dx7G7--50--91W1C.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 12px;
+    border-radius: 25%;
+    padding-left: 150px;
+    padding-right: 15px;
+    box-shadow: 4px 3px 8px 1px #969696;
+}
+
+#playerInfo{
+    padding-left: 15px;
+    padding-right: 150px;
+}
+
+#playerBars, #evylenBars {
+    
+    min-width: 210px;
+    flex-flow: column;
+    align-items: center;
+    flex: 2 1 auto;
+}
+
+#playerHealth{
+    min-width: 210px;
+    border: 3px solid black;
+    border-radius: 25%;
+    background-color: red;
+    
+}
+
+#evylenHealth{
+    min-width: 210px;
+    align-content: flex-end;
+    border: 3px solid black;
+    border-radius: 25%;
+    background-color: red;
+}
+/* fight zone
+--champions and such */
+
+#fightZone{
+    justify-content: space-around;
+    flex-flow: row;
+    width: 65%;
+    
+    
+}
+
+#fightBtn{
+    background: url(../../images/fight.jpg);
+    font-size: 32px;
+    min-height: 150px;
+    align-self: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px black;
+    font-weight: 900;
+}
+#playerZone, #evylenZone {
+    
+    display: flex;
+    flex: 1 1 auto;
+    max-width: 150px;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*COMMAND CENTER*/
+    /****************/
+#commandCenter{
+    justify-content: space-around;
+    flex-flow: row;
+    width: 75%;
+}
+
+#playerCommand, #evylenCommand{
+    display:flex;
+    flex-flow: column;
+    }
+
+    
+#champOneCmd, #champTwoCmd, #champThreeCmd, #evylenChampOneCmd, #evylenChampTwoCmd, #evylenChampThreeCmd{
+    display: flex;
+    flex: 1;
+    padding: 2px;
+    max-width: max-content;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.button{
+    padding: 10px;
+    border-radius: 20%;
+    background-color: grey;
+    border: 3px solid black;
+    margin: 3px;
+    box-shadow: 3px 2px 10px 1px #969696;
+}
+
+
+#avatar, #evylenAvatar {
+    border-radius: 50%;
+    max-width: 100px;
+
+}
+.avatars{
+    background-color: rgb(202, 202, 202);
+    padding: 4px
+    
+}
+
+.playerPrimary {
+   max-width: 100px;
+   align-self: flex-end;
+   border: 3px solid black;
+   background-color: rgb(202, 202, 202);
+   
+  
+}
+.evylenPrimary{
+    max-width: 100px;
+    align-self: flex-start;
+    border: 3px solid black;
+    background-color: rgb(202, 202, 202);
+
+}
+.playerSecondary{
+    align-self: flex-start;
+    border: 2px solid black;
+    background-color: rgb(202, 202, 202);
+    
+}
+.evylenSecondary{
+    align-self: flex-end;
+    border: 2px solid black;
+    background-color: rgb(202, 202, 202);
+    
+}

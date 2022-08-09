@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <title> monsterGame </title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="./javascript/main.js"></script>
+        <script src="./javascript/evylen.js"></script>
+    </head>
+    <body>
+        <button class="button" onclick="startup()">NAME YOUR GUY</button>
+        <div id="healthBars">
+            <div id="playerInfo">
+                <img id="avatar" src="../images/prof1.png">
+                <div id="playerBars">
+                    <div id="playerPoint"> 0 </div>
+                    <div id="playerHealth"> 100 </div>
+                    <div id="playerName">player</div>
+                </div>                 
+            </div>
+            <div id="evylenInfo">                
+                <div id="evylenBars">
+                    <div id="evylenPoints"> 0 </div>
+                    <div id="evylenHealth"> 100 </div>
+                    <div id="evylenName">Evylen</div>
+                </div>
+                <img id="evylenAvatar" src="../images/Evylen.png">
+            </div>
+        
+        </div>
+
+        <div id="fightZone">
+            <div id="playerZone">
+                <img class="playerSecondary" id="playerChampOne" src="../images/player1.png">
+                <img class="playerPrimary" id="playerChampTwo" src="../images/player3.png">
+                <img class="playerSecondary" id="playerChampThree" src="../images/player2.png"> 
+            </div>
+            <button class="button" id="fightBtn" onclick="fight()">GO</button>
+ 
+            <div id="evylenZone">
+                <img class="evylenSecondary" id="evylenChampOne" src="../images/evylen1.png">
+                <img class="evylenPrimary" id="evylenChampTwo" src="../images/evylen3.png">
+                <img class="evylenSecondary"  id="evylenChampThree" src="../images/evylen2.png">
+            </div>
+        </div>
+
+        <div id="commandCenter">
+            <div id="playerCommand">
+                <
+                <div id="champOneCmd">
+                    <img class="avatars" id="champOneAvatar" src="../images/player1.png">
+                    <div class="button" id="champOneRock" onclick="c1Rock()"> rock </div>
+                    <div class="button" id="champOnePaper" onclick="c1Paper()" > paper </div>
+                    <div class="button" id="champOneScissors" onclick="c1Scissors()"> scissors </div>
+                    <div id="c1Monitor"> </div>
+                </div>
+                <div id="champThreeCmd">
+                    <img class="avatars" id="champThreeAvatar" src="../images/player3.png">
+                    <div class="button" id="champThreeRock" onclick="c3Rock()" > rock </div>
+                    <div class="button" id="champThreePaper" onclick="c3Paper()"> paper </div>
+                    <div class="button" id="champThreeScissors" onclick="c3Scissors()"> scissors </div>
+                    <div id="c3Monitor"> </div>
+                </div>
+                <div id="champTwoCmd">
+                    <img class="avatars" id="champTwoAvatar" src="../images/player2.png">
+                    <div class="button" id="champTwoRock" onclick="c2Rock()"> rock </div>
+                    <div class="button" id="champTwoPaper" onclick="c2Paper()"> paper </div>
+                    <div class="button"id="champTwoScissors" onclick="c2Scissors()"> scissors </div>
+                    <div id="c2Monitor"> </div>
+                </div>
+               
+            </div>
+            <div id="evylenCommand">
+                <div id="evylenChampOneCmd">
+                    
+                    <div class="button" id="evylenChampOneRock"> rock </div>
+                    <div class="button" id="evylenChampOnePaper"> paper </div>
+                    <div class="button" id="evylenChampOneScissors"> scissors </div>
+                    <img class="avatars" id="evylenChampOneAvatar" src="../images/evylen1.png">
+                </div>
+                <div id="evylenChampThreeCmd">
+                    
+                    <div class="button" id="evylenChampThreeRock"> rock </div>
+                    <div class="button" id="evylenChampThreePaper"> paper </div>
+                    <div class="button" id="evylenChampThreeScissors"> scissors </div>
+                    <img class="avatars" id="evylenChampThreeAvatar" src="../images/evylen3.png">
+                </div>
+                <div id="evylenChampTwoCmd">
+                   
+                    <div class="button" id="evylenChampTwoRock"> rock </div>
+                    <div class="button" id="evylenChampTwoPaper"> paper </div>
+                    <div class="button" id="evylenChampTwoScissors"> scissors </div>
+                    <img class="avatars" id="evylenChampTwoAvatar" src="../images/evylen2.png">
+                </div>
+               
+            </div>
+        </div>
+           </body>
+</html>
