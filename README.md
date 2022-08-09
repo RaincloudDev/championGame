@@ -15,14 +15,11 @@ should not be expected to work unless it does.
 - assignable Player Name
 - just hit the NAME YOUR GUY button to fire the order. "player" will become whatever is entered. 
 
-- GO BUTTON
-- this button is trying to determine a winner. 
-- currently all it does is turn the buttons back to normal
-- c1 monitor
-- c1Monitor is a value that changes based on the players selection
-- its numbers right now. primarily used for debugging but it may become a feature in some form.
+- GO BUTTON 
+-        -currently all it does is turn the buttons back to normal
+
 - Evylen calls you a dummy!
-- its in the .log()
+-        -its in the .log()
 futureFeatures
 -    good fight logic.
 -    Points gained for each hit
@@ -31,4 +28,4 @@ futureFeatures
 -        -more champions fighting will deal greater potential damage to players
 -    live score
  -   points-unlockable powerup
--        -small expensive health potion style.
+-        -small expensive health potion-style.
